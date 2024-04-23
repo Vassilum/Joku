@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Generator</title>
+</head>
+<body>
+    <h1>Taulukon tulostaja</h1>
+    <form action="php.php" method="post">
+        <label for="rows">Rivi:</label>
+        <input type="number" id="rows" name="rows" min="1" required><br><br>
+        
+        <label for="columns">Sarake:</label>
+        <input type="number" id="columns" name="columns" min="1" required><br><br>
+        
+        <label for="background_color">Taustaväri:</label>
+        <input type="color" id="background_color" name="background_color"><br><br>
+        
+        <input type="submit" value="Generate Table">
+    </form>
+</body>
+</html>
