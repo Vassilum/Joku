@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etäisyysmuunnin</title>
+</head>
+<body>
+<h2>Etäisyysmuunnin</h2>
+<form id="distanceForm" action="etaisyys.php" method="post">
+  <label for="distance">Etäisyys:</label>
+  <input type="number" id="distance" name="distance" required>
+  <br>
+  <input type="radio" id="milesToKm" name="conversionType" value="milesToKm" required>
+  <label for="milesToKm">Mailit kilometreiksi</label>
+  <br>
+  <input type="radio" id="kmToMiles" name="conversionType" value="kmToMiles" required>
+  <label for="kmToMiles">Kilometrit maileiksi</label>
+  <br>
+  <button type="submit">Muunna</button>
+</form>
+</body>
+</html>
